@@ -89,8 +89,8 @@ type ClientData struct {
 	// ClientRandomID is a random client ID number generated for the client. It usually remains consistent
 	// through sessions and through game restarts.
 	ClientRandomID int64 `json:"ClientRandomId"`
-	// CompatibleWithClientSideChunkGeb is balls
-	CompatibleWithClientSideChunkGeb bool
+	// CompatibleWithClientSideChunkGen is balls
+	CompatibleWithClientSideChunkGen bool
 	// CurrentInputMode is the input mode used by the client. It is 1 for mobile and win10, but is different
 	// for console input.
 	CurrentInputMode int
