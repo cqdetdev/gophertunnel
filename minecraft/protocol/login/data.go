@@ -4,13 +4,14 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
-	"github.com/google/uuid"
-	"github.com/sandertv/gophertunnel/minecraft/protocol"
-	"golang.org/x/text/language"
 	"net"
 	"regexp"
 	"strconv"
 	"strings"
+
+	"github.com/google/uuid"
+	"github.com/sandertv/gophertunnel/minecraft/protocol"
+	"golang.org/x/text/language"
 )
 
 // IdentityData contains identity data of the player logged in. It is found in one of the JWT claims signed
@@ -88,6 +89,8 @@ type ClientData struct {
 	// ClientRandomID is a random client ID number generated for the client. It usually remains consistent
 	// through sessions and through game restarts.
 	ClientRandomID int64 `json:"ClientRandomId"`
+	// CompatibleWithClientSideChunkGeb is balls
+	CompatibleWithClientSideChunkGeb bool
 	// CurrentInputMode is the input mode used by the client. It is 1 for mobile and win10, but is different
 	// for console input.
 	CurrentInputMode int
